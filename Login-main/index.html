@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  
 <head>
     <meta charset="UTF-8">
     <title>Tela de Login</title>
@@ -90,19 +91,6 @@
         </form>
         <div id="mensagem"></div>
     </div>
-
-    <script>
-        document.getElementById('formLogin').addEventListener('submit', function(event) {
-            event.preventDefault(); // Impede o envio do formulário
-            const usuario = document.getElementById('usuario').value;
-            const mensagemDiv = document.getElementById('mensagem');
-
-            if (usuario.trim() !== '') {
-                mensagemDiv.textContent = `${usuario}, bem logado!`;
-            } else {
-                mensagemDiv.textContent = 'Por favor, digite um nome de usuário válido.';
-            }
-        });
-    </script>
+<script src="login.js"></script>
 </body>
 </html>
